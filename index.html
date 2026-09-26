@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Upthrust</title>
+<meta name="description" content="Upthrust is a GCSE Physics revision app: short interactive lessons with instant feedback, written for your own exam board, course and tier.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238B5CF6'/%3E%3Cpath d='M32 14 L46 30 H37 V50 H27 V30 H18 Z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{--page:#F4F3F0;--card:#FFFFFF;--ink:#2B2B2B;--ink2:#58585D;--muted:#6E6E73;--violet:#8B5CF6;--violetSoft:#F3F0FE;--violetInk:#6B3FDB;--teal:#0E8A9E;color-scheme:light}
+@media (prefers-color-scheme: dark){:root{--page:#121211;--card:#1B1B19;--ink:#EFEEEB;--ink2:#B4B2AC;--muted:#88867F;--violet:#9B7CFF;--violetSoft:#241F38;--violetInk:#C1ADFF;--teal:#3FBDD1;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:Nunito,"Avenir Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;padding-inline:20px;padding-block:max(40px,env(safe-area-inset-top)) max(40px,env(safe-area-inset-bottom))}
+main{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:44px;height:44px;flex:none}
+.brand span{font-size:26px;font-weight:800;letter-spacing:-0.01em}
+h1{font-size:clamp(30px,7vw,44px);line-height:1.12;font-weight:800;margin:0;letter-spacing:-0.02em;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink2);margin:0;max-width:34em}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+li{background:var(--card);border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+li svg{width:26px;height:26px;flex:none;margin-top:1px}
+li b{display:block;font-weight:800}
+li span{color:var(--ink2);font-size:16px}
+.soon{display:inline-flex;align-self:flex-start;align-items:center;gap:8px;background:var(--violetSoft);color:var(--violetInk);font-weight:800;border-radius:999px;padding:8px 16px;font-size:16px}
+footer{color:var(--muted);font-size:14px;padding-top:8px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand" aria-label="Upthrust">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="var(--violet)"/><path d="M32 14 L46 30 H37 V50 H27 V30 H18 Z" fill="#FFFFFF"/></svg>
+    <span>Upthrust</span>
+  </div>
+
+  <h1>GCSE Physics revision, one question at a time.</h1>
+  <p class="lede">Short interactive lessons with instant feedback and a clear “Why?”, written for your own exam board, your course and your tier.</p>
+
+  <ul>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg>
+      <div><b>Your own course</b><span>Separate or combined science, Foundation or Higher, in the words your own exam uses.</span></div>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+      <div><b>Drawn to scale</b><span>Diagrams worked out from the physics, so an arrow twice as long means twice the force.</span></div>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div><b>An honest estimate</b><span>A grade band from your own practice: an estimate, never a prediction.</span></div>
+    </li>
+  </ul>
+
+  <span class="soon">Coming to iPhone and Android</span>
+
+  <footer>© 2026 Upthrust · upthrust.app</footer>
+</main>
+</body>
+</html>
