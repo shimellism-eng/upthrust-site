@@ -402,3 +402,52 @@ main { display: block; }
 
 .notfound { display: grid; gap: 16px; padding-block: 64px 96px; justify-items: start; }
 .tap { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+
+/* Launch bar: in the page flow, never pinned; one at the top, one echo at the end */
+.launch { padding-block: 4px 16px; }
+.launch-bar {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--violet-edge); color: #FFFFFF;
+  border-radius: 20px; padding: 14px 18px;
+  font-size: 16px; line-height: 1.4; text-align: left;
+}
+.launch-bar svg { width: 24px; height: 24px; flex: none; }
+.launch-bar strong { font-weight: 800; }
+.closing .launch-bar { display: inline-flex; max-width: 34em; }
+@media (min-width: 600px) { .launch .launch-bar { justify-content: center; font-size: 17px; padding: 16px 24px; } }
+
+/* Made by a teacher: one line in the hero */
+.maker { font-size: 16px; line-height: 1.5; color: var(--ink2); max-width: 30em; }
+.maker strong { color: var(--ink); }
+
+/* Clips: the animations the student drives, as short loops on a still */
+.clips { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
+@media (min-width: 760px) { .clips { grid-template-columns: repeat(4, 1fr); gap: 24px 20px; } }
+.clip figure { display: grid; gap: 10px; }
+.clip-box { position: relative; aspect-ratio: 402 / 520; border-radius: 16px; overflow: hidden; background: var(--soft); }
+.clip-still { position: absolute; inset: 0; display: block; }
+.clip-still img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+.clip-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; display: block; background: transparent; }
+.clip-placeholder { display: grid; place-items: center; align-content: center; gap: 8px; color: var(--teal); }
+.clip-placeholder svg { width: 36px; height: 36px; }
+.clip-placeholder span { font-size: 13px; font-weight: 700; color: var(--muted); }
+.clip figcaption { display: grid; gap: 2px; font-size: 14px; line-height: 1.45; color: var(--ink2); }
+.clip figcaption strong { color: var(--ink); font-size: 15px; }
+.clips-note { margin-top: 20px; }
+@media (prefers-reduced-motion: reduce) { .clip-video { display: none; } }
+
+/* The grade band, explained: a drawn ladder and five plain cards */
+.band-explain { display: grid; gap: 16px; margin-top: 16px; }
+.band-diagram { background: var(--card); border-radius: 20px; padding: 20px; display: grid; gap: 12px; justify-items: center; align-content: start; }
+.band-diagram svg { width: 100%; max-width: 420px; height: auto; }
+.band-diagram svg text { font-family: var(--font); }
+.band-diagram figcaption { font-size: 14px; line-height: 1.45; color: var(--muted); text-align: center; max-width: 30em; }
+.band-points { display: grid; gap: 12px; }
+.point { background: var(--card); border-radius: 20px; padding: 20px; display: grid; gap: 6px; }
+.point h3 { font-size: 18px; }
+.point p { color: var(--ink2); font-size: 16px; line-height: 1.5; }
+@media (min-width: 760px) {
+  .band-explain { grid-template-columns: minmax(0, 420px) 1fr; gap: 24px; align-items: start; margin-top: 24px; }
+  .band-diagram { padding: 28px; }
+  .point { padding: 24px; }
+}
