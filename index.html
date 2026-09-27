@@ -3,61 +3,300 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Upthrust</title>
-<meta name="description" content="Upthrust is a GCSE Physics revision app: short interactive lessons with instant feedback, written for your own exam board, course and tier.">
+<title>Upthrust: GCSE Physics revision app</title>
+<meta name="description" content="A GCSE Physics revision app for AQA, Edexcel, OCR A and OCR B: short interactive lessons with instant feedback and a clear &quot;Why?&quot;. Coming soon to iPhone and Android.">
+<link rel="canonical" href="https://upthrust.app/">
+<meta name="theme-color" content="#F4F3F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Upthrust">
+<meta property="og:title" content="Upthrust: GCSE Physics revision app">
+<meta property="og:description" content="Short interactive lessons written for your exam board, your course and your tier, with instant feedback and a clear &quot;Why?&quot;. Coming soon to iPhone and Android.">
+<meta property="og:url" content="https://upthrust.app/">
+<meta property="og:image" content="https://upthrust.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Upthrust: Physics revision that shows you why, beside the app's Home screen.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238B5CF6'/%3E%3Cpath d='M32 14 L46 30 H37 V50 H27 V30 H18 Z' fill='white'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap">
-<style>
-:root{--page:#F4F3F0;--card:#FFFFFF;--ink:#2B2B2B;--ink2:#58585D;--muted:#6E6E73;--violet:#8B5CF6;--violetSoft:#F3F0FE;--violetInk:#6B3FDB;--teal:#0E8A9E;color-scheme:light}
-@media (prefers-color-scheme: dark){:root{--page:#121211;--card:#1B1B19;--ink:#EFEEEB;--ink2:#B4B2AC;--muted:#88867F;--violet:#9B7CFF;--violetSoft:#241F38;--violetInk:#C1ADFF;--teal:#3FBDD1;color-scheme:dark}}
-*{box-sizing:border-box}
-html,body{margin:0}
-body{background:var(--page);color:var(--ink);font-family:Nunito,"Avenir Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;padding-inline:20px;padding-block:max(40px,env(safe-area-inset-top)) max(40px,env(safe-area-inset-bottom))}
-main{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand svg{width:44px;height:44px;flex:none}
-.brand span{font-size:26px;font-weight:800;letter-spacing:-0.01em}
-h1{font-size:clamp(30px,7vw,44px);line-height:1.12;font-weight:800;margin:0;letter-spacing:-0.02em;text-wrap:balance}
-.lede{font-size:19px;color:var(--ink2);margin:0;max-width:34em}
-ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-li{background:var(--card);border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
-li svg{width:26px;height:26px;flex:none;margin-top:1px}
-li b{display:block;font-weight:800}
-li span{color:var(--ink2);font-size:16px}
-.soon{display:inline-flex;align-self:flex-start;align-items:center;gap:8px;background:var(--violetSoft);color:var(--violetInk);font-weight:800;border-radius:999px;padding:8px 16px;font-size:16px}
-footer{color:var(--muted);font-size:14px;padding-top:8px}
-</style>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/nunito-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/nunito-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<main>
-  <div class="brand" aria-label="Upthrust">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="var(--violet)"/><path d="M32 14 L46 30 H37 V50 H27 V30 H18 Z" fill="#FFFFFF"/></svg>
-    <span>Upthrust</span>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Upthrust, home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#8B5CF6"/><path d="M32 14 L46 30 H37 V50 H27 V30 H18 Z" fill="#FFFFFF"/></svg>
+      <span>Upthrust</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="privacy/">Privacy</a></li>
+        <li><a href="support/">Support</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <h1>GCSE Physics revision, one question at a time.</h1>
-  <p class="lede">Short interactive lessons with instant feedback and a clear “Why?”, written for your own exam board, your course and your tier.</p>
+<main id="content">
 
-  <ul>
-    <li>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg>
-      <div><b>Your own course</b><span>Separate or combined science, Foundation or Higher, in the words your own exam uses.</span></div>
-    </li>
-    <li>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
-      <div><b>Drawn to scale</b><span>Diagrams worked out from the physics, so an arrow twice as long means twice the force.</span></div>
-    </li>
-    <li>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      <div><b>An honest estimate</b><span>A grade band from your own practice: an estimate, never a prediction.</span></div>
-    </li>
-  </ul>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow">GCSE Physics revision app</p>
+        <h1 id="hero-title">Physics revision that shows you why.</h1>
+        <p class="lede">Short interactive lessons written for your exam board, your course and your tier. Every answer gets instant feedback and a clear &ldquo;Why?&rdquo;.</p>
+        <p class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          Coming soon to iPhone and Android
+        </p>
+      </div>
+      <div class="hero-phone">
+        <div class="phone">
+          <img src="assets/screens/home-grade-band.webp" width="402" height="874" fetchpriority="high" alt="Upthrust Home screen: days to the first exam, practice this week, a grade band of 6 to 7 marked as an estimate, and today's questions.">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <span class="soon">Coming to iPhone and Android</span>
+  <section class="section who" aria-labelledby="who-title">
+    <div class="wrap">
+      <div class="panel">
+        <h2 id="who-title" class="h2">Written for your own exam, in your board's own words.</h2>
+        <div class="rows">
+          <ul class="chips" aria-label="Exam boards">
+            <li class="chip">AQA</li>
+            <li class="chip">Edexcel</li>
+            <li class="chip">OCR A</li>
+            <li class="chip">OCR B</li>
+          </ul>
+          <ul class="chips" aria-label="Courses">
+            <li class="chip">Separate science</li>
+            <li class="chip">Combined science</li>
+          </ul>
+          <ul class="chips" aria-label="Tiers">
+            <li class="chip">Foundation</li>
+            <li class="chip">Higher</li>
+          </ul>
+        </div>
+        <p class="small">Upthrust is independent and is not endorsed by any exam board.</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>© 2026 Upthrust · upthrust.app</footer>
+  <section class="section" id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <h2 id="how-title">How a lesson works</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Answer a question</h3>
+          <p>Tap, type or drag. Many questions come with a drawing worked out from the physics.</p>
+          <div class="crop">
+            <img src="assets/screens/question-magnetic-field.webp" width="402" height="874" loading="lazy" alt="A question asking where a bar magnet's field is strongest, with field lines drawn round the magnet and four marked points.">
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>See why</h3>
+          <p>You find out straight away if you were right, and a Why? explains the physics behind the answer, right or wrong.</p>
+          <div class="crop why">
+            <img src="assets/screens/why-explanation.webp" width="402" height="874" loading="lazy" alt="The answer marked right, with a Why? panel explaining that the field is strongest at the poles.">
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Come back to it</h3>
+          <p>Questions from earlier lessons return on later days, before they fade.</p>
+          <div class="crop today">
+            <img src="assets/screens/home-grade-band.webp" width="402" height="874" loading="lazy" alt="The Today card on Home: four questions back from earlier lessons, and the next lesson.">
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="drawings-title">
+    <div class="wrap">
+      <div class="feature">
+        <div class="feature-text">
+          <p class="eyebrow">Drawings you can move</p>
+          <h2 id="drawings-title">Drawings worked out from the physics</h2>
+          <p class="body">Field lines, circuits, forces and waves are drawn from the physics itself, so an arrow twice as long means twice the force. Some you move yourself: push a magnet into a coil and watch the needle swing.</p>
+        </div>
+        <div class="feature-phone">
+          <div class="phone">
+            <img src="assets/screens/magnet-into-coil.webp" width="402" height="874" loading="lazy" alt="An animation: a magnet being pushed into a coil of wire, with the meter's needle swinging.">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="band-title">
+    <div class="wrap">
+      <div class="tinted">
+        <div class="feature flip">
+          <div class="feature-text">
+            <p class="eyebrow">An honest grade band</p>
+            <h2 id="band-title">An estimate, never a prediction</h2>
+            <p class="body">Once you have practised enough, Home shows the grades you are working at, from your own answers. It tells you what the band rests on and what would move it up. Until then it says so, rather than guessing.</p>
+          </div>
+          <div class="feature-phone">
+            <div class="phone short">
+              <img src="assets/screens/band-explained.webp" width="402" height="640" loading="lazy" alt="Your band, explained: bars for practised and secure, higher-only work, explain questions and paper practised.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="else-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <h2 id="else-title">What else it does</h2>
+      </div>
+      <ul class="grid">
+        <li class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M4 17a2 2 0 0 1 2-2h13"/><path d="M9 7h6"/></svg>
+          <h3>Your own course</h3>
+          <p>Board, course and tier set once. Change them any time in Settings.</p>
+        </li>
+        <li class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+          <h3>Instant feedback</h3>
+          <p>Know straight away if you were right, with the reason explained.</p>
+        </li>
+        <li class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg>
+          <h3>Spaced practice</h3>
+          <p>Questions from earlier lessons come back on later days.</p>
+        </li>
+        <li class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <h3>Your exam dates</h3>
+          <p>Counts down to your physics papers, and you can set your own dates.</p>
+        </li>
+        <li class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M3 3l18 18"/></svg>
+          <h3>No account</h3>
+          <p>Open it and start. There is nothing to sign up for.</p>
+        </li>
+        <li class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><rect x="9.5" y="10" width="5" height="5" rx="1"/><path d="M10.5 10V8.5a1.5 1.5 0 0 1 3 0V10"/></svg>
+          <h3>Stays on your phone</h3>
+          <p>Your answers never leave it. No adverts, no tracking.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="screens-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <h2 id="screens-title">Screens</h2>
+      </div>
+    </div>
+    <div class="screens-wrap">
+      <div class="screens" tabindex="0" role="region" aria-label="App screens, scroll sideways to see more">
+        <div class="shot">
+          <figure>
+            <div class="phone"><img src="assets/screens/home-grade-band.webp" width="402" height="874" loading="lazy" alt="Upthrust Home screen: days to the first exam, practice this week, a grade band of 6 to 7 marked as an estimate, and today's questions."></div>
+            <figcaption class="caption">Home, for a sample student. Every board sees its own course here.</figcaption>
+          </figure>
+        </div>
+        <div class="shot">
+          <figure>
+            <div class="phone"><img src="assets/screens/question-magnetic-field.webp" width="402" height="874" loading="lazy" alt="A question asking where a bar magnet's field is strongest, with field lines drawn round the magnet and four marked points."></div>
+            <figcaption class="caption">A question with a drawing.</figcaption>
+          </figure>
+        </div>
+        <div class="shot">
+          <figure>
+            <div class="phone"><img src="assets/screens/why-explanation.webp" width="402" height="874" loading="lazy" alt="The answer marked right, with a Why? panel explaining that the field is strongest at the poles."></div>
+            <figcaption class="caption">The Why? after an answer.</figcaption>
+          </figure>
+        </div>
+        <div class="shot">
+          <figure>
+            <div class="phone"><img src="assets/screens/magnet-into-coil.webp" width="402" height="874" loading="lazy" alt="An animation: a magnet being pushed into a coil of wire, with the meter's needle swinging."></div>
+            <figcaption class="caption">An animation you drive.</figcaption>
+          </figure>
+        </div>
+        <div class="shot">
+          <figure>
+            <div class="phone"><img src="assets/screens/topics.webp" width="402" height="874" loading="lazy" alt="The Topics tab: lessons done so far and each topic grouped by exam paper."></div>
+            <figcaption class="caption">Your topics, paper by paper.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap narrow">
+      <div class="section-head">
+        <h2 id="faq-title">Questions</h2>
+        <p class="lede">Cannot find what you need? The <a href="support/">support page</a> has more answers.</p>
+      </div>
+      <div class="faq">
+        <details name="faq">
+          <summary>Which exam boards does it cover?</summary>
+          <div class="answer"><p>AQA, Edexcel, OCR A (Gateway) and OCR B (Twenty First Century), for GCSE Physics and the physics in combined science, Foundation and Higher.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Do I need an account?</summary>
+          <div class="answer"><p>No. There is nothing to sign up for, and no email address is asked for.</p></div>
+        </details>
+        <details name="faq">
+          <summary>What does it know about me?</summary>
+          <div class="answer"><p>Only what you tell it on your own phone: your board, course and tier, and your answers. None of it leaves the phone. <a href="privacy/">Read the privacy policy</a>.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Is the grade band a prediction?</summary>
+          <div class="answer"><p>No. It is an estimate from your practice so far. It says what it rests on, and it only appears once there is enough practice to base it on.</p></div>
+        </details>
+        <details name="faq">
+          <summary>When can I get it?</summary>
+          <div class="answer"><p>It is coming to iPhone and Android. There is no date yet.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Who writes it?</summary>
+          <div class="answer"><p>A physics teacher, question by question, from the exam boards' own specifications.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-label="Availability">
+    <span class="brand" aria-hidden="true">
+      <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#8B5CF6"/><path d="M32 14 L46 30 H37 V50 H27 V30 H18 Z" fill="#FFFFFF"/></svg>
+      <span>Upthrust</span>
+    </span>
+    <p class="chip">Coming soon to iPhone and Android</p>
+  </section>
+
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="privacy/">Privacy</a></li>
+        <li><a href="support/">Support</a></li>
+      </ul>
+    </nav>
+    <span>&copy; 2026 Upthrust</span>
+    <p class="small">Not affiliated with or endorsed by AQA, Pearson Edexcel or OCR.</p>
+  </div>
+</footer>
 </body>
 </html>
