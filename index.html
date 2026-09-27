@@ -45,20 +45,99 @@
 
 <main id="content">
 
+  <section class="launch" aria-label="Availability">
+    <div class="wrap">
+      <p class="launch-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg>
+        <span><strong>Coming soon to iPhone and Android.</strong> No date yet, and nothing to sign up for.</span>
+      </p>
+    </div>
+  </section>
+
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
       <div class="hero-panel">
         <div class="hero-text">
           <p class="eyebrow">GCSE Physics revision app</p>
           <h1 id="hero-title">Physics revision that shows you why.</h1>
-          <p class="lede">Short interactive lessons written for your exam board, your course and your tier. Every answer gets instant feedback and a clear &ldquo;Why?&rdquo;.</p>
-          <p class="status">Coming soon to iPhone and Android</p>
+          <p class="lede">Short interactive lessons written for your exam board, your course and your tier. Answer, see why, and meet the question again before it fades.</p>
+          <p class="maker"><strong>Made by an A level and GCSE physics teacher with senior experience.</strong> Every question is matched to your own board&rsquo;s specification, and every lesson is checked and approved by the teacher before it ships.</p>
           <p class="small">For AQA, Edexcel, OCR A and OCR B. Separate and combined science. Foundation and Higher.</p>
         </div>
         <div class="hero-phone cut">
           <div class="phone-wrap"><div class="phone"><picture><source srcset="assets/screens/home-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/home-light.webp" width="402" height="874" fetchpriority="high" alt="Upthrust Home screen: days to the first exam, practice this week, a grade band of 6 to 7 marked as an estimate, and today's lesson."></picture></div></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="animations" aria-labelledby="clips-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Drawings you can move</p>
+        <h2 id="clips-title">Drawings worked out from the physics</h2>
+        <p class="lede">Field lines, circuits, forces and waves are drawn from the physics itself, so an arrow twice as long means twice the force. Some you drive yourself, with your finger. Each clip below is the app, in your hands.</p>
+      </div>
+      <ul class="clips">
+        <li class="clip">
+          <figure>
+            <div class="clip-box">
+              <picture class="clip-still"><source srcset="assets/screens/coil-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/coil-light.webp" width="402" height="874" loading="lazy" alt="A magnet being pushed into a coil of wire, with the meter's needle swinging."></picture>
+              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
+                <source src="assets/clips/coil-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
+                <source src="assets/clips/coil.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption><strong>Magnet into a coil</strong><span>You drag the magnet in and out. The needle swings one way, then the other, and twice as far with twice the turns.</span></figcaption>
+          </figure>
+        </li>
+        <li class="clip">
+          <figure>
+            <div class="clip-box">
+              <div class="clip-still clip-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 6v12M8 8l8 8M8 16l8-8"/></svg>
+                <span>Clip on its way</span>
+              </div>
+              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
+                <source src="assets/clips/generator-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
+                <source src="assets/clips/generator.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption><strong>Generator</strong><span>You turn the handle. The needle and the trace follow your hand: turn faster and the peaks grow taller and closer together.</span></figcaption>
+          </figure>
+        </li>
+        <li class="clip">
+          <figure>
+            <div class="clip-box">
+              <div class="clip-still clip-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 7v10M16 7v10M2 12h2M20 12h2"/></svg>
+                <span>Clip on its way</span>
+              </div>
+              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
+                <source src="assets/clips/motor-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
+                <source src="assets/clips/motor.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption><strong>Motor</strong><span>You close the switch, turn the cell round or swap the magnets. The coil slows, stops and turns the other way.</span></figcaption>
+          </figure>
+        </li>
+        <li class="clip">
+          <figure>
+            <div class="clip-box">
+              <div class="clip-still clip-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5 0 2.5-6 5-6s2.5 12 5 12 2.5-12 5-12 2.5 6 5 6"/></svg>
+                <span>Clip on its way</span>
+              </div>
+              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
+                <source src="assets/clips/waves-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
+                <source src="assets/clips/waves.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption><strong>Making a wave</strong><span>You shake the end of a rope up and down. The wave you make runs along it at the rope&rsquo;s own speed.</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+      <p class="small clips-note">The clips loop on their own. If your phone is set to reduce motion, you see a still instead.</p>
     </div>
   </section>
 
@@ -84,27 +163,10 @@
         <li class="step">
           <span class="step-num" aria-hidden="true">3</span>
           <h3>Come back to it</h3>
-          <p>Questions from earlier lessons return on later days, before they fade.</p>
+          <p>Questions from earlier lessons return on later days, before they fade. Get one wrong and it is back tomorrow. Get it right and it comes back at longer gaps until it is secure.</p>
           <div class="window w-today"><picture><source srcset="assets/screens/home-locked-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/home-locked-light.webp" width="402" height="874" loading="lazy" alt="The Today card on Home: four questions back from earlier lessons, and the next lesson."></picture></div>
         </li>
       </ol>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="drawings-title">
-    <div class="wrap">
-      <div class="feature">
-        <div class="feature-text">
-          <p class="eyebrow">Drawings you can move</p>
-          <h2 id="drawings-title">Drawings worked out from the physics</h2>
-          <p class="body">Field lines, circuits, forces and waves are drawn from the physics itself, so an arrow twice as long means twice the force. Some you move yourself: push a magnet into a coil and watch the needle swing.</p>
-        </div>
-        <div class="stage soft">
-          <div class="cut cut-coil">
-            <div class="phone-wrap"><div class="phone"><picture><source srcset="assets/screens/coil-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/coil-light.webp" width="402" height="874" loading="lazy" alt="An animation: a magnet being pushed into a coil of wire, with the meter's needle swinging."></picture></div></div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -123,6 +185,66 @@
           </figure>
           <div class="cut cut-band">
             <div class="phone-wrap"><div class="phone"><picture><source srcset="assets/screens/band-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/band-light.webp" width="402" height="640" loading="lazy" alt="Your band, explained: bars for practised and secure, higher-only work, explain questions and paper practised."></picture></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="band-explain">
+        <figure class="band-diagram">
+          <svg viewBox="0 0 340 236" role="img" aria-labelledby="band-diagram-title">
+            <title id="band-diagram-title">A ladder of grade bands beside four bars: secure lines, Higher-only lines secure, explain and calculate, and paper practised. The band is the highest rung where every bar clears its mark; here, 6 to 7.</title>
+            <g font-size="14" font-weight="800" text-anchor="middle">
+              <rect x="12" y="12" width="104" height="28" rx="14" fill="var(--soft)"/><text x="64" y="31" fill="var(--ink2)">8 to 9</text>
+              <rect x="12" y="48" width="104" height="28" rx="14" fill="var(--soft)"/><text x="64" y="67" fill="var(--ink2)">7 to 8</text>
+              <rect x="12" y="84" width="104" height="28" rx="14" fill="var(--violet-edge)"/><text x="64" y="103" fill="#FFFFFF">6 to 7</text>
+              <rect x="12" y="120" width="104" height="28" rx="14" fill="var(--soft)"/><text x="64" y="139" fill="var(--ink2)">5 to 6</text>
+              <rect x="12" y="156" width="104" height="28" rx="14" fill="var(--soft)"/><text x="64" y="175" fill="var(--ink2)">4 to 5</text>
+              <rect x="12" y="192" width="104" height="28" rx="14" fill="var(--soft)"/><text x="64" y="211" fill="var(--ink2)">3 to 4</text>
+            </g>
+            <path d="M156 98 H128" fill="none" stroke="var(--violet-ink)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M134 92 L128 98 L134 104" fill="none" stroke="var(--violet-ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <g font-size="12" font-weight="700" fill="var(--ink2)">
+              <text x="168" y="28">Secure lines</text>
+              <rect x="168" y="36" width="160" height="10" rx="5" fill="var(--line2)"/>
+              <rect x="168" y="36" width="126" height="10" rx="5" fill="var(--violet)"/>
+              <rect x="287" y="32" width="2" height="18" rx="1" fill="var(--ink)"/>
+              <text x="168" y="80">Higher-only lines secure</text>
+              <rect x="168" y="88" width="160" height="10" rx="5" fill="var(--line2)"/>
+              <rect x="168" y="88" width="92" height="10" rx="5" fill="var(--violet)"/>
+              <rect x="247" y="84" width="2" height="18" rx="1" fill="var(--ink)"/>
+              <text x="168" y="132">Explain and calculate</text>
+              <rect x="168" y="140" width="160" height="10" rx="5" fill="var(--line2)"/>
+              <rect x="168" y="140" width="72" height="10" rx="5" fill="var(--violet)"/>
+              <rect x="231" y="136" width="2" height="18" rx="1" fill="var(--ink)"/>
+              <text x="168" y="184">Paper practised</text>
+              <rect x="168" y="192" width="160" height="10" rx="5" fill="var(--line2)"/>
+              <rect x="168" y="192" width="108" height="10" rx="5" fill="var(--teal)"/>
+              <rect x="263" y="188" width="2" height="18" rx="1" fill="var(--ink)"/>
+            </g>
+            <text x="168" y="226" font-size="12" font-weight="700" fill="var(--muted)">Dark line: the mark</text>
+          </svg>
+          <figcaption>The band is the highest rung where every bar clears its mark. This is the Higher ladder; Foundation has its own, and it stops at 5, the top of that paper.</figcaption>
+        </figure>
+        <div class="band-points">
+          <div class="point">
+            <h3>What it counts</h3>
+            <p>Your exam board publishes a list of the things you must be able to do. Every question in Upthrust proves one or more lines on that list. Each time you answer, the app notes the line, the date, and whether you were right, partly right or wrong. A line becomes secure once you have got it right on two different days, at least three days apart, on a different question where there is one. Your own &ldquo;got it&rdquo; tick is shown beside the evidence, never counted as evidence.</p>
+          </div>
+          <div class="point">
+            <h3>How the band is worked out</h3>
+            <p>Three plain fractions build it: how many of the lines you have practised are secure; on Higher, how many of the Higher-only lines are secure, because that is where 7 to 9 lives; and how many lines you have secured through a question that asked you to explain or calculate, not only recall. Beside them sits how much of your paper you have practised. The band is the highest rung on the ladder where you meet every one of those. It is two grades wide, lower grade first: 6 to 7 means you have shown a 6, and a 7 is in reach.</p>
+          </div>
+          <div class="point">
+            <h3>Before there is enough to go on</h3>
+            <p>No band appears until you have practised about two fifths of your paper, spread across it rather than one topic alone, on at least eight different days. Until then Home shows plain counts: how many lines you have shown, and how many are secure. Between two fifths and three fifths practised the band is three grades wide, and says it is not yet an estimate.</p>
+          </div>
+          <div class="point">
+            <h3>What moves it up or down</h3>
+            <p>Only your answers. It rises as more lines become secure across more of your paper. It falls when a secure line is got wrong, which makes it shaky again, and a line you have not answered right for eight weeks starts to fade, so the app brings it back before then. The countdown to your exam, your target grade and the minutes you spend never move it.</p>
+          </div>
+          <div class="point">
+            <h3>Why an estimate, never a prediction</h3>
+            <p>Your exam is two papers on two days, with questions nobody has seen, written under time. Upthrust cannot see that. It cannot see the hands-on part of your practicals, the topics it has not built yet, or, on Combined Science, your biology and chemistry. So beside every band it shows the share of your paper the band rests on, and names the topics it does not cover. It never says &ldquo;predicted&rdquo;, &ldquo;on track&rdquo; or &ldquo;you will get&rdquo;.</p>
           </div>
         </div>
       </div>
@@ -209,8 +331,8 @@
           <div class="answer"><p>It is coming to iPhone and Android. There is no date yet.</p></div>
         </details>
         <details name="faq">
-          <summary>Who writes it?</summary>
-          <div class="answer"><p>A physics teacher, question by question, from the exam boards' own specifications.</p></div>
+          <summary>Who makes it?</summary>
+          <div class="answer"><p>An A level and GCSE physics teacher with senior experience. Every question is matched to your own board&rsquo;s specification, and every lesson is checked and approved by the teacher before it ships.</p></div>
         </details>
       </div>
     </div>
@@ -221,8 +343,8 @@
       <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#8B5CF6"/><path d="M32 14 L46 30 H37 V50 H27 V30 H18 Z" fill="#FFFFFF"/></svg>
       <span>Upthrust</span>
     </span>
-    <p class="closing-line">Written by a physics teacher, for students in England.</p>
-    <p class="status">Coming soon to iPhone and Android</p>
+    <p class="closing-line">Made by a physics teacher, for students in England.</p>
+    <p class="launch-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg><span><strong>Coming soon to iPhone and Android.</strong> No date yet, and nothing to sign up for.</span></p>
   </section>
 
 </main>
@@ -239,5 +361,11 @@
     <p class="small">Not affiliated with or endorsed by AQA, Pearson Edexcel or OCR.</p>
   </div>
 </footer>
+<script>
+  /* Reduce motion: the clips stay as stills. Nothing here touches the network. */
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
+  }
+</script>
 </body>
 </html>
