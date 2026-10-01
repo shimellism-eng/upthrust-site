@@ -82,11 +82,8 @@
         <li class="clip">
           <figure>
             <div class="clip-box">
-              <picture class="clip-still"><source srcset="assets/screens/coil-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/coil-light.webp" width="402" height="874" loading="lazy" alt="A magnet being pushed into a coil of wire, with the meter's needle swinging."></picture>
-              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
-                <source src="assets/clips/coil-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
-                <source src="assets/clips/coil.mp4" type="video/mp4">
-              </video>
+              <picture class="clip-still"><source srcset="assets/screens/coil-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/coil-light.webp" width="402" height="520" loading="lazy" alt="A magnet being pushed into a coil of wire, with the meter's needle swinging."></picture>
+              <video class="clip-video" data-light="assets/clips/coil.mp4" data-dark="assets/clips/coil-dark.mp4" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
             </div>
             <figcaption><strong>Magnet into a coil</strong><span>You drag the magnet in and out. The needle swings one way, then the other, and twice as far with twice the turns.</span></figcaption>
           </figure>
@@ -94,14 +91,8 @@
         <li class="clip">
           <figure>
             <div class="clip-box">
-              <div class="clip-still clip-placeholder" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 6v12M8 8l8 8M8 16l8-8"/></svg>
-                <span>Clip on its way</span>
-              </div>
-              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
-                <source src="assets/clips/generator-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
-                <source src="assets/clips/generator.mp4" type="video/mp4">
-              </video>
+              <picture class="clip-still"><source srcset="assets/screens/generator-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/generator-light.webp" width="402" height="520" loading="lazy" alt="A coil turning between two magnets, with a handle to turn it, a meter needle and a trace of p.d. against time."></picture>
+              <video class="clip-video" data-light="assets/clips/generator.mp4" data-dark="assets/clips/generator-dark.mp4" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
             </div>
             <figcaption><strong>Generator</strong><span>You turn the handle. The needle and the trace follow your hand: turn faster and the peaks grow taller and closer together.</span></figcaption>
           </figure>
@@ -109,14 +100,8 @@
         <li class="clip">
           <figure>
             <div class="clip-box">
-              <div class="clip-still clip-placeholder" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 7v10M16 7v10M2 12h2M20 12h2"/></svg>
-                <span>Clip on its way</span>
-              </div>
-              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
-                <source src="assets/clips/motor-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
-                <source src="assets/clips/motor.mp4" type="video/mp4">
-              </video>
+              <picture class="clip-still"><source srcset="assets/screens/motor-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/motor-light.webp" width="402" height="520" loading="lazy" alt="A motor coil between a north and a south magnet, with buttons to switch on, turn the cell round or swap the magnets."></picture>
+              <video class="clip-video" data-light="assets/clips/motor.mp4" data-dark="assets/clips/motor-dark.mp4" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
             </div>
             <figcaption><strong>Motor</strong><span>You close the switch, turn the cell round or swap the magnets. The coil slows, stops and turns the other way.</span></figcaption>
           </figure>
@@ -124,14 +109,8 @@
         <li class="clip">
           <figure>
             <div class="clip-box">
-              <div class="clip-still clip-placeholder" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2.5 0 2.5-6 5-6s2.5 12 5 12 2.5-12 5-12 2.5 6 5 6"/></svg>
-                <span>Clip on its way</span>
-              </div>
-              <video class="clip-video" autoplay muted loop playsinline preload="none" tabindex="-1" aria-hidden="true">
-                <source src="assets/clips/waves-dark.mp4" type="video/mp4" media="(prefers-color-scheme: dark)">
-                <source src="assets/clips/waves.mp4" type="video/mp4">
-              </video>
+              <picture class="clip-still"><source srcset="assets/screens/waves-dark.webp" media="(prefers-color-scheme: dark)"><img src="assets/screens/waves-light.webp" width="402" height="520" loading="lazy" alt="A rope with a handle at one end that you drag up and down, and a painted dot marked on the rope."></picture>
+              <video class="clip-video" data-light="assets/clips/waves.mp4" data-dark="assets/clips/waves-dark.mp4" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
             </div>
             <figcaption><strong>Making a wave</strong><span>You shake the end of a rope up and down. The wave you make runs along it at the rope&rsquo;s own speed.</span></figcaption>
           </figure>
@@ -362,10 +341,36 @@
   </div>
 </footer>
 <script>
-  /* Reduce motion: the clips stay as stills. Nothing here touches the network. */
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
-  }
+  /* Clips. The light or dark file is chosen here, because <source media> is not
+     honoured by every browser. Nothing loads until a clip is near the screen, and
+     with reduced motion nothing loads at all, so only the still is shown. */
+  (function () {
+    var videos = Array.prototype.slice.call(document.querySelectorAll('video.clip-video[data-light]'));
+    if (!videos.length || !window.matchMedia) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var dark = window.matchMedia('(prefers-color-scheme: dark)');
+    var near = new Set();
+    function pick(v) {
+      var want = dark.matches ? v.getAttribute('data-dark') : v.getAttribute('data-light');
+      if (v.getAttribute('src') === want) return;
+      v.setAttribute('src', want);
+      v.load();
+      if (near.has(v)) go(v);
+    }
+    function go(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    function onChange() { videos.forEach(function (v) { if (v.getAttribute('src')) pick(v); }); }
+    if (dark.addEventListener) dark.addEventListener('change', onChange); else if (dark.addListener) dark.addListener(onChange);
+    if (!('IntersectionObserver' in window)) { videos.forEach(function (v) { near.add(v); pick(v); go(v); }); return; }
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') near.forEach(go); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) { near.add(v); if (!v.getAttribute('src')) pick(v); else go(v); }
+        else { near.delete(v); v.pause(); }
+      });
+    }, { rootMargin: '200px 0px' });
+    videos.forEach(function (v) { io.observe(v); });
+  })();
 </script>
 </body>
 </html>
