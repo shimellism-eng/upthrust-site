@@ -43,12 +43,12 @@
 :root {
   --page: #F7F2E8;
   --card: #FFFDF8;
-  --soft: #F0EADD;
+  --soft: #F1EBDF;
   --ink: #2A2622;
   --ink2: #5C554D;
-  --muted: #736B61;
+  --muted: #6F675D;
   --line: #E8E0D0;
-  --line2: #DDD4C4;
+  --line2: #D8CDB9;
   --violet: #3558BE;
   --violet-edge: #2A47A0;
   --violet-soft: #ECEFF8;
@@ -71,12 +71,12 @@
   :root {
     --page: #1B1814;
     --card: #26221D;
-    --soft: #312C26;
+    --soft: #302B25;
     --ink: #EEE8DE;
-    --ink2: #B5ACA0;
-    --muted: #968E82;
+    --ink2: #BDB4A8;
+    --muted: #9A9286;
     --line: #38322B;
-    --line2: #48413A;
+    --line2: #4A4339;
     --violet: #93AAF2;
     --violet-edge: #4A66CC;
     --violet-soft: #22263A;
@@ -190,7 +190,7 @@ h3 { font-size: 20px; line-height: 1.3; font-weight: 800; letter-spacing: -0.01e
 }
 /* The Light or dark pair: each phone in its own theme, whatever the page's */
 .phone.frame-light { background: #2A2622; }
-.phone.frame-dark { background: #48413A; }
+.phone.frame-dark { background: #4A4339; }
 
 /* A phone rising out of a panel: the panel's bottom edge cuts it */
 .cut { overflow: hidden; margin-bottom: -1px; padding-inline: 24px; margin-inline: -24px; padding-top: 24px; margin-top: -24px; }
