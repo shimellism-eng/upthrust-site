@@ -4,34 +4,108 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Upthrust: GCSE Physics revision</title>
-<meta name="description" content="GCSE Physics revision for AQA, Edexcel, OCR A and OCR B: short interactive lessons with instant feedback and a clear &quot;Why?&quot;. Works in your browser, with no account.">
+<meta name="description" content="Free GCSE Physics revision for AQA, Edexcel, OCR A and OCR B: short interactive lessons with instant feedback and a clear &quot;Why?&quot; for every answer. Works in your browser, with no account.">
+<link rel="canonical" href="https://upthrust.app/">
 <meta name="theme-color" content="#F7F2E8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1B1814" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Upthrust">
 <meta property="og:title" content="Upthrust: GCSE Physics revision">
-<meta property="og:description" content="GCSE Physics revision for AQA, Edexcel, OCR A and OCR B: short interactive lessons with instant feedback and a clear &quot;Why?&quot;. Works in your browser, with no account.">
+<meta property="og:description" content="Free GCSE Physics revision for AQA, Edexcel, OCR A and OCR B: short interactive lessons with instant feedback and a clear &quot;Why?&quot; for every answer. Works in your browser, with no account.">
 <meta property="og:url" content="https://upthrust.app/">
 <meta property="og:image" content="https://upthrust.app/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="upthrust-build" content="6b52322b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233558BE'/%3E%3Cpath d='M32 14 L46 30 H37 V50 H27 V30 H18 Z' fill='%23F7F2E8'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<style id="expo-reset">
-html, body { height: 100%; margin: 0; background: #F7F2E8; color: #2A2622; }
-@media (prefers-color-scheme: dark) { html, body { background: #1B1814; color: #EEE8DE; } }
-body { overflow: hidden; }
-#root { display: flex; height: 100%; flex: 1; }
-noscript p { font: 16px/1.5 system-ui, sans-serif; max-width: 34em; margin: 40px auto; padding: 0 20px; }
-noscript a { color: inherit; }
-</style>
+<link rel="preload" href="/assets/fonts/nunito-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:Nunito;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/nunito-400.woff2) format("woff2")}@font-face{font-family:Nunito;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/nunito-700.woff2) format("woff2")}@font-face{font-family:Nunito;font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/nunito-800.woff2) format("woff2")}
+:root{--page:#F7F2E8;--card:#FFFDF8;--soft:#F1EBDF;--ink:#2A2622;--ink2:#5C554D;--muted:#6F675D;--line:#E8E0D0;--accent:#3558BE;--accent-edge:#2A47A0;--accent-soft:#ECEFF8;--accent-ink:#2F4FAE;--on-accent:#FFFFFF;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--page:#1B1814;--card:#26221D;--soft:#302B25;--ink:#EEE8DE;--ink2:#BDB4A8;--muted:#9A9286;--line:#38322B;--accent:#6F86E0;--accent-edge:#4A66CC;--accent-soft:#22263A;--accent-ink:#A9BCF5;--on-accent:#1B1814;color-scheme:dark}}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:17px/1.6 Nunito,"Avenir Next",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:680px;margin:0 auto;padding:0 16px}
+@media (min-width:600px){.wrap{padding:0 24px}}
+a{color:var(--accent-ink);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--card);padding:8px 12px}
+header{padding:16px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:800;font-size:20px}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{font-weight:700;color:var(--ink2);text-decoration:none}
+nav a:hover,nav a[aria-current]{color:var(--accent-ink);text-decoration:underline}
+main{padding:8px 0 40px}
+h1{font-weight:800;font-size:32px;line-height:1.2;margin:16px 0 12px;letter-spacing:-.01em}
+@media (min-width:600px){h1{font-size:40px}}
+h2{font-weight:800;font-size:23px;line-height:1.3;margin:36px 0 8px}
+h3{font-weight:800;font-size:19px;line-height:1.35;margin:0 0 4px}
+p{margin:0 0 12px}
+.lead{font-size:19px;color:var(--ink2)}
+.small{font-size:15px;color:var(--ink2)}
+.button{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:19px;text-decoration:none;padding:14px 28px;border-radius:16px;box-shadow:0 4px 0 var(--accent-edge);margin:8px 0 12px}
+.button:hover{filter:brightness(1.05)}
+.button:active{transform:translateY(2px);box-shadow:0 2px 0 var(--accent-edge)}
+.links{list-style:none;padding:0;margin:8px 0;display:grid;gap:10px}
+@media (min-width:600px){.links.two{grid-template-columns:1fr 1fr}}
+.links a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-weight:700;text-decoration:none;color:var(--ink)}
+.links a:hover{border-color:var(--accent)}
+.links span{display:block;font-weight:400;font-size:15px;color:var(--ink2)}
+.lessons{list-style:none;padding:0;margin:12px 0;display:grid;gap:12px}
+.lessons>li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.lessons h2{margin:0 0 6px;font-size:20px}
+.lessons ul{margin:4px 0 0;padding-left:20px}
+.lessons ul li{margin:2px 0}
+.say{font-style:italic}
+.tag{display:inline-block;font-size:13px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);border-radius:8px;padding:1px 8px;margin:0 6px 4px 0}
+.badges{text-align:center;margin:40px 0 8px}
+.badges p{font-weight:700;color:var(--ink2);margin:0 0 4px}
+.badges div{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px;padding:12px 0}
+.badges img{height:48px;width:auto}
+.badges span{max-width:150px;color:var(--ink2)}
+footer{padding:24px 0 40px;text-align:center}
+footer ul{justify-content:center}
+footer p{font-size:15px;color:var(--ink2);margin-top:12px}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://upthrust.app/#organization","name":"Upthrust","url":"https://upthrust.app/","logo":"https://upthrust.app/apple-touch-icon.png"},{"@type":"WebSite","@id":"https://upthrust.app/#website","name":"Upthrust","url":"https://upthrust.app/","inLanguage":"en-GB","publisher":{"@id":"https://upthrust.app/#organization"}},{"@type":"SoftwareApplication","name":"Upthrust","url":"https://upthrust.app/app/","description":"Short interactive lessons written for your exam board, your course and your tier. Answer, see why, and meet the question again before it fades.","applicationCategory":"EducationalApplication","operatingSystem":"Web browser","inLanguage":"en-GB","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"publisher":{"@id":"https://upthrust.app/#organization"}}]}</script>
 </head>
 <body>
-<noscript><p>Upthrust needs JavaScript turned on to run its lessons. You can still read the <a href="/privacy/">privacy policy</a> and the <a href="/support/">support page</a>.</p></noscript>
-<div id="root"></div>
-<script src="/app/js/index-54ef5f747f5a4dde6f80749037b228bf.js" defer></script>
+<a class="skip" href="#content">Skip to content</a>
+<header><div class="wrap">
+<a class="brand" href="/" aria-label="Upthrust, home"><svg viewBox="0 0 64 64" aria-hidden="true" width="28" height="28"><rect width="64" height="64" rx="16" fill="#3558BE"/><path d="M32 14 L46 30 H37 V50 H27 V30 H18 Z" fill="#F7F2E8"/></svg><span>Upthrust</span></a>
+<nav aria-label="Main"><ul><li><a href="/topics/">Topics</a></li><li><a href="/about/">About</a></li></ul></nav>
+</div></header>
+<main id="content"><div class="wrap">
+<h1>GCSE Physics revision that shows you why</h1>
+<p class="lead">Short interactive lessons written for your exam board, your course and your tier. Answer, see why, and meet the question again before it fades.</p>
+<p><a class="button" href="/app/">Open Upthrust</a></p>
+<p class="small">Works in your browser. No account, no adverts.</p>
+<h2>What it is</h2>
+<p>117 short lessons across 10 topics. Each lesson is a run of questions: you tap, drag, sort or type an answer and find out straight away whether it is right.</p>
+<p>Every answer comes with a &quot;Why?&quot; that explains the physics. The diagrams are drawn from the physics itself, and in some lessons you move the parts yourself.</p>
+<p>As you practise, Upthrust gives an estimate of your grade: an estimate from practice, never a prediction.</p>
+<h2>Who it is for</h2>
+<p>Students in England taking GCSE Physics or GCSE Combined Science, at Foundation or Higher tier.</p>
+<h2>Your exam board</h2>
+<p>When you start, you choose your exam board, your course and your tier. From then on, Upthrust shows only what is on your course, in your own board's words.</p>
+<ul class="links two"><li><a href="/boards/aqa/">AQA</a></li><li><a href="/boards/edexcel/">Edexcel</a></li><li><a href="/boards/ocr-a/">OCR A</a></li><li><a href="/boards/ocr-b/">OCR B</a></li></ul>
+<h2>Topics</h2>
+<ul class="links two"><li><a href="/topics/forces/">Forces<span>23 lessons</span></a></li><li><a href="/topics/energy/">Energy<span>10 lessons</span></a></li><li><a href="/topics/particle-model/">Particle model<span>9 lessons</span></a></li><li><a href="/topics/electricity/">Electricity<span>17 lessons</span></a></li><li><a href="/topics/waves/">Waves<span>16 lessons</span></a></li><li><a href="/topics/atomic-structure/">Atomic structure<span>14 lessons</span></a></li><li><a href="/topics/magnetism/">Magnetism<span>14 lessons</span></a></li><li><a href="/topics/key-concepts/">Key concepts<span>2 lessons</span></a></li><li><a href="/topics/space/">Space<span>8 lessons</span></a></li><li><a href="/topics/working-scientifically/">Working scientifically<span>4 lessons</span></a></li></ul>
+<h2>Free</h2>
+<p>Every lesson is free. There is no account to make and nothing to sign in to. Your progress stays on your device.</p>
+<h2>Who made it</h2>
+<p>Upthrust is made by a practising GCSE physics teacher in England. <a href="/about/">About Upthrust</a></p>
+<p><a class="button" href="/app/">Open Upthrust</a></p>
+<div class="badges">
+<p>Coming soon</p>
+<div><img src="/assets/badges/get-it-on-google-play-en.svg" alt="Get it on Google Play. Coming soon." width="162" height="48"><span>Coming soon to the App Store</span></div>
+</div>
+</div></main>
+<footer><div class="wrap">
+<nav aria-label="Site"><ul><li><a href="/topics/">Topics</a></li><li><a href="/about/">About</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/support/">Support</a></li></ul></nav>
+<p>Upthrust is independent and is not endorsed by any exam board.</p>
+</div></footer>
 </body>
 </html>
